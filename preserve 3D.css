@@ -1,0 +1,91 @@
+body
+{
+    background: linear-gradient(90deg,green,pink,yellow);
+}
+img
+{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+}
+.container
+{
+    width: 350px;
+    height: 300px;
+    position:relative;
+    margin-top: 20%;
+    margin-left: 40%;
+    perspective: 1000px;
+    transform-style: preserve-3d; 
+    transform: rotateX(-10deg)
+    rotateZ(-10deg);
+    animation-name: ror;
+    animation-duration: 10s;
+    animation-direction: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes ror{
+    50%
+    {
+        transform: rotateX(30deg);
+    }
+    50%
+    {
+        transform: rotateX(30deg);
+    }
+}
+
+
+.images
+{
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-direction: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes rotate{
+from{
+
+}
+to{
+    transform: rotatey(360deg);
+}
+}
+
+img:nth-child(1)
+{
+    transform: rotateY(60deg)translatez(300px);
+}
+img:nth-child(2)
+{
+    transform: rotateY(120deg)translatez(300px);
+}
+img:nth-child(3)
+{
+    transform: rotateY(180deg)translatez(300px);
+}
+img:nth-child(4)
+{
+    transform: rotateY(240deg)translatez(300px);
+
+}
+img:nth-child(5)
+{
+    transform: rotateY(300deg) translatez(300px);
+}
+img:nth-child(6)
+{
+    transform: rotateY(360deg)translatez(300px);
+}
+img:hover{
+    width: 340px;
+    height: 250px;
+    cursor: pointer;
+}
+
+
