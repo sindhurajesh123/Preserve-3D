@@ -87,5 +87,31 @@ img:hover{
     height: 250px;
     cursor: pointer;
 }
+@media screen and (max-width: 576px) {
+    img {
+       
+        width: 240px;
+        height: 150px;
+        
+        
+    }
+    .container {
+        width: 10%;
+        height: 100px;
+        perspective: 2500px;
+    
+    }
+   
+
+               
+        img:hover {
+           
+            width: 270px; /* Adjust the width as needed for smaller screens */
+            height:250px ; /* Maintain aspect ratio */
+            cursor: pointer; /* Retain the pointer cursor */
+        }
+    
+
+   
 
 
